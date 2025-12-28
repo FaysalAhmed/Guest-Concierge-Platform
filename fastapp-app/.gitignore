@@ -1,0 +1,14 @@
+# Ignore CPython artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extension modules (built by CPython)
+*.so
+*.pyd
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/

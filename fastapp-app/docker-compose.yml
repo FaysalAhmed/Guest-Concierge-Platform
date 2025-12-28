@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fastapp-app:latest
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
